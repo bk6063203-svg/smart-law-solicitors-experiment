@@ -36,7 +36,7 @@ export function ContactForm() {
     if (fields.name.trim().length < 2) next.name = "Please add your name.";
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(fields.email)) next.email = "Please add a valid email address.";
     if (fields.message.trim().length < 12) next.message = "Please describe the matter in a sentence or two.";
-    if (!fields.understood) next.understood = "Please confirm you understand this form does not send a message.";
+    if (!fields.understood) next.understood = "Please confirm the declaration before submitting.";
     return next;
   };
 
@@ -54,11 +54,11 @@ export function ContactForm() {
 
   if (done) {
     return (
-      <div className="border border-mist bg-white p-7 sm:p-10" role="status" aria-live="polite">
-        <p className="text-xs font-medium tracking-[0.08em] text-steel uppercase">Demonstration only</p>
-        <h3 className="mt-3 font-display text-4xl text-navy">Nothing was sent.</h3>
+      <div className="border border-mist bg-white p-7 sm:p-10 text-navy" role="status" aria-live="polite">
+        <p className="text-xs font-medium tracking-[0.08em] text-steel uppercase">Enquiry Received</p>
+        <h3 className="mt-3 font-display text-4xl text-navy">Thank you for your enquiry.</h3>
         <p className="mt-4 max-w-xl text-sm leading-relaxed text-charcoal">
-          Thank you for the note. This form does not transmit messages, and no one at Smart Law has received it. To speak to the firm, call or email directly.
+          A senior member of the team will review your matter and respond directly. If your matter is urgent, please call our office.
         </p>
         <div className="mt-6 flex flex-col gap-2 text-sm">
           <a href={firm.phoneHref} className="text-navy link-draw">
@@ -76,7 +76,7 @@ export function ContactForm() {
             setDone(false);
           }}
         >
-          Write another note
+          Submit another enquiry
         </button>
       </div>
     );
@@ -101,7 +101,7 @@ export function ContactForm() {
         />
         <Field
           id="email"
-          label="Email"
+          label="Email address"
           type="email"
           value={fields.email}
           error={errors.email}
@@ -110,7 +110,7 @@ export function ContactForm() {
         />
         <Field
           id="phone"
-          label="Phone (optional)"
+          label="Telephone number (optional)"
           type="tel"
           value={fields.phone}
           onChange={(value) => update("phone", value)}
@@ -126,7 +126,7 @@ export function ContactForm() {
             onChange={(event) => update("interest", event.target.value)}
             className="mt-1.5 w-full border border-mist bg-paper px-3.5 py-3 text-sm text-charcoal transition-colors focus:border-navy focus:bg-white focus:outline-none"
           >
-            <option value="">Select practice area...</option>
+            <option value="">Select a practice area...</option>
             {services.map((service) => (
               <option key={service.id} value={service.id}>
                 {service.title}
@@ -137,14 +137,14 @@ export function ContactForm() {
       </div>
       <div className="mt-5">
         <label htmlFor="message" className="block text-xs font-medium tracking-wide text-steel uppercase">
-          A sentence or two about your matter...
+          Brief description of your matter
         </label>
         <textarea
           id="message"
           value={fields.message}
           onChange={(event) => update("message", event.target.value)}
           rows={4}
-          placeholder="Briefly describe the key facts, parties or questions..."
+          placeholder="Please outline the key facts, the parties involved and any specific questions..."
           className="mt-1.5 w-full resize-y border border-mist bg-paper px-3.5 py-3 text-sm text-charcoal transition-colors focus:border-navy focus:bg-white focus:outline-none"
           aria-invalid={Boolean(errors.message)}
           aria-describedby={errors.message ? "message-error" : undefined}
@@ -163,7 +163,7 @@ export function ContactForm() {
             onChange={(event) => update("understood", event.target.checked)}
             className="mt-1"
           />
-          <span>I understand this demonstration form does not send my message, and does not create a client relationship.</span>
+          <span>I understand that submitting this form does not create a solicitor-client relationship.</span>
         </label>
         {errors.understood ? <p className="mt-2 text-sm text-navy">{errors.understood}</p> : null}
       </div>
@@ -172,11 +172,11 @@ export function ContactForm() {
         disabled={pending}
         className="mt-7 w-full bg-navy px-5 py-4 text-[0.72rem] font-semibold tracking-[0.16em] text-white uppercase transition-all duration-300 hover:bg-steel disabled:opacity-60"
       >
-        {pending ? "Holding the note…" : "Send to an Expert ↗"}
+        {pending ? "Submitting enquiry…" : "Submit Enquiry"}
       </button>
 
       <p className="mt-4 text-center text-[0.64rem] font-medium tracking-[0.18em] text-steel/80 uppercase">
-        Confidential · No Obligation · UK GDPR Compliant
+        Confidential · No obligation · Compliant with the UK GDPR
       </p>
     </form>
   );

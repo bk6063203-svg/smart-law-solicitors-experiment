@@ -95,7 +95,7 @@ export function MobileMenu({ returnFocus }: { returnFocus: HTMLButtonElement | n
                 }}
                 className="mt-6 bg-white px-5 py-3 text-sm font-medium text-navy"
               >
-                Speak to an Expert
+                Speak to a Solicitor
               </button>
             </div>
           </nav>

@@ -1,14 +1,14 @@
 import { createContext, useContext, type ReactNode, type RefObject } from "react";
 import type Lenis from "lenis";
 
-export type PageId = "home" | "about" | "services" | "people" | "insights" | "contact";
+export type PageId = "home" | "about" | "services" | "insights" | "contact";
 
 export type Route = {
   page: PageId;
   section?: string;
 };
 
-export const pages: PageId[] = ["home", "about", "services", "people", "insights", "contact"];
+export const pages: PageId[] = ["home", "about", "services", "insights", "contact"];
 
 export function isPageId(value: string): value is PageId {
   return pages.includes(value as PageId);

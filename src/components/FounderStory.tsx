@@ -58,33 +58,25 @@ export function FounderStory() {
             </div>
 
             <h2 className="mt-5 font-display text-[2.5rem] leading-[1.06] font-medium tracking-[-0.025em] text-navy sm:text-5xl lg:text-[3.3rem]">
-              Built from a simple conviction:{" "}
-              <span className="font-display italic text-steel">the law should move with you.</span>
+              Founded on the principle that the law should work at the pace of those it serves.
             </h2>
 
             <div className="mt-8 space-y-5 text-sm leading-[1.8] text-charcoal sm:text-[0.98rem]">
               <p>
-                Smart Law began with a question Ather Ahmed kept returning to: why does engaging
-                the law still feel like stepping back in time? The answer became a practice built
-                on dual loyalty – to the rigour of the profession, and to the pace of the people it
-                serves.
+                Smart Law Solicitors was established by Ather Ahmed in response to a question he had long considered: why does instructing a solicitor so often feel dated and slow? The practice that followed rests on two commitments: fidelity to the rigour of the profession, and responsiveness to the clients it serves.
               </p>
               <p>
-                Under his direction, senior access is the default rather than the exception:
-                clients speak to decision-makers, receive advice in plain English, and watch their
-                matters move. Modern systems are treated not as a threat to legal craftsmanship,
-                but as its newest instrument – one that returns time and attention to where they
-                belong.
+                Under his direction, clients have direct access to senior decision-makers, receive advice in plain English and can see their matters progress. Modern systems are regarded not as a threat to legal craftsmanship but as a means of supporting it, returning time and attention to the work that matters.
               </p>
             </div>
 
             {/* Quote block */}
             <div className="mt-8 border-l-2 border-navy bg-mist/35 p-5">
               <p className="font-display text-lg italic text-navy sm:text-xl">
-                &ldquo;The law should be the steady hand — never the bottleneck.&rdquo;
+                &ldquo;The law should be a steady hand, never a bottleneck.&rdquo;
               </p>
               <p className="mt-2 text-[0.66rem] font-semibold tracking-[0.18em] text-steel uppercase">
-                Ather Ahmed — Founder, Smart Law
+                Ather Ahmed, Founder, Smart Law Solicitors
               </p>
             </div>
 

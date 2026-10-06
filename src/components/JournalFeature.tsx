@@ -13,7 +13,7 @@ export function JournalFeature() {
       <div className="mb-8 flex flex-wrap items-end justify-between gap-5">
         <h2 className="font-display text-4xl text-navy sm:text-5xl">From the Journal</h2>
         <button type="button" onClick={() => navigate("insights")} className="text-xs tracking-[0.08em] text-navy uppercase link-draw">
-          Visit the Journal <ArrowUpRight className="ml-1 inline h-3.5 w-3.5" aria-hidden="true" />
+          View all articles <ArrowUpRight className="ml-1 inline h-3.5 w-3.5" aria-hidden="true" />
         </button>
       </div>
       <div className="grid border border-mist lg:grid-cols-[1.15fr_0.85fr]">
@@ -22,7 +22,7 @@ export function JournalFeature() {
           <h3 className="mt-8 max-w-xl font-display text-4xl leading-tight sm:text-5xl">{featured.title}</h3>
           <p className="mt-5 max-w-lg text-sm leading-relaxed text-mist">{featured.excerpt}</p>
           <button type="button" onClick={() => navigate("insights", featured.id)} className="group mt-10 inline-flex items-center gap-2 border-b border-white/40 pb-2 text-xs tracking-[0.08em] uppercase">
-            Read the note
+            Read the article
             <ArrowUpRight className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
           </button>
         </article>

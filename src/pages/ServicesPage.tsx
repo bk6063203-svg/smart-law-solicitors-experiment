@@ -21,8 +21,8 @@ export function ServicesPage() {
     <>
       <PageHero
         eyebrow="Services"
-        title="The work, named carefully."
-        text="Seven directions. Six with a published shape. Solicitation is confirmed, and its detailed scope is not invented here."
+        title="Our services, clearly defined."
+        text="Smart Law Solicitors acts in seven areas of practice. Six are described below, and the scope of Solicitation will be published once it has been confirmed."
         image={photo(10964647, 1800)}
         imageAlt="A modern commercial building photographed from below."
       />

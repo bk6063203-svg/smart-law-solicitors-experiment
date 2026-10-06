@@ -18,7 +18,7 @@ export function PracticeAccordion() {
   return (
     <section id="services-overview" className="border-t border-mist bg-white text-navy">
       <div className="mx-auto max-w-[1240px] px-5 py-24 sm:px-8 lg:px-10 lg:py-32">
-        {/* Section Header matching Screenshot 4 */}
+        {/* Section Header */}
         <div className="flex flex-col justify-between gap-6 border-b border-mist pb-8 md:flex-row md:items-end">
           <div>
             <div className="flex items-center gap-3">
@@ -28,11 +28,11 @@ export function PracticeAccordion() {
               </p>
             </div>
             <h2 className="mt-4 font-display text-[2.5rem] leading-[1.04] font-medium tracking-[-0.02em] text-navy sm:text-5xl lg:text-[3.4rem]">
-              The work we do, <span className="font-display italic text-steel">stated plainly.</span>
+              Our Practice Areas
             </h2>
           </div>
-          <p className="max-w-xs text-xs leading-relaxed text-steel md:text-right">
-            Commercial and private matters handled with senior legal judgement. Each instruction is evaluated on its own papers.
+          <p className="max-w-md text-xs leading-relaxed text-steel md:text-right">
+            We act on commercial and private matters, applying senior legal judgement to each. Every instruction is assessed on its own facts and documents.
           </p>
         </div>
 
@@ -71,11 +71,11 @@ function ServiceAccordionRow({
   onNavigateContact: () => void;
 }) {
   const subtitleMap: Record<string, string> = {
-    pharmaceutical: "SPECIALIST COMMERCIAL CAPABILITY",
+    pharmaceutical: "SPECIALIST COMMERCIAL PRACTICE",
     wills: "WILLS · PROBATE · ESTATE ADMINISTRATION",
-    conveyancing: "PROPERTY SALES, PURCHASES & FINANCE",
-    business: "FOR OWNERS BUYING AND SELLING BUSINESSES",
-    leases: "LEASEHOLD PROPERTY, HANDLED PRECISELY",
+    conveyancing: "PROPERTY SALES, PURCHASES AND FINANCE",
+    business: "ADVICE FOR OWNERS BUYING OR SELLING A BUSINESS",
+    leases: "LEASEHOLD PROPERTY, HANDLED WITH PRECISION",
     immigration: "VISIT · STUDY · REMAIN · SETTLE",
   };
 
@@ -167,11 +167,10 @@ function ServiceAccordionRow({
                   </div>
                 ) : null}
 
-                {/* Instruction assurance box matching Screenshot 4 */}
+                {/* Instruction assurance box */}
                 <div className="mt-4 border border-mist bg-white p-3.5 text-xs text-charcoal/85 sm:p-4">
-                  <span className="font-semibold text-navy">Scope assurance:</span> The precise
-                  scope of transaction support is confirmed on instruction, in writing, before any
-                  work begins.
+                  <span className="font-semibold text-navy">Scope of instruction:</span> The precise
+                  scope of our support in any transaction is confirmed in writing, on instruction and before work begins.
                 </div>
 
                 {/* Sub-services pills / checklist */}
@@ -219,7 +218,7 @@ function ServiceAccordionRow({
                   onClick={onNavigateService}
                   className="group inline-flex items-center gap-2 border border-navy/30 px-5 py-3 text-[0.68rem] font-semibold tracking-[0.14em] text-navy uppercase transition-all duration-300 hover:border-navy hover:bg-navy hover:text-white"
                 >
-                  <span>Full Detail</span>
+                  <span>View Full Details</span>
                   <ArrowUpRight
                     className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                     aria-hidden="true"

@@ -94,8 +94,8 @@ export function ServiceScroller() {
           light
           eyebrow="Practice areas"
           index="01–06"
-          title="A journey through the work, not a grid of boxes."
-          text="Property opens the reading. Pharmaceutical work, private client, business, leases and immigration follow. Practice index numbers are kept on the services page. Solicitation is set out after the journey, without an invented scope."
+          title="Our Practice Areas"
+          text="We act on commercial and private matters, applying senior legal judgement to each. Every instruction is assessed on its own facts and documents."
         />
       </div>
 

@@ -8,7 +8,7 @@ const steps = [
   {
     number: "01",
     title: "Contact the office",
-    text: "Call, email, or use the demonstration form on this page. The form does not send anything.",
+    text: "Call, email, or submit the consultation form on this page.",
   },
   {
     number: "02",
@@ -27,10 +27,10 @@ export function ContactPage() {
     <>
       <PageHero
         eyebrow="Contact"
-        title="Speak to the office."
-        text="Huddersfield has a published address. Manchester meetings are by arrangement. There is no London office."
+        title="Speak to a Solicitor."
+        text="Please tell us where your matter currently stands. A senior member of the team will respond personally with a clear view of your options and, if you wish, a proposed scope of work."
         image={photo(34568210, 1800)}
-        imageAlt="Victorian stone architecture, used as context rather than a picture of the office."
+        imageAlt="Victorian stone architecture in Huddersfield."
       />
       <section className="bg-paper">
         <div className="mx-auto grid max-w-[1240px] gap-10 px-5 py-16 sm:px-8 lg:grid-cols-12 lg:px-10 lg:py-24">
@@ -54,7 +54,7 @@ export function ContactPage() {
                 </dd>
               </div>
               <div>
-                <dt className="text-xs tracking-[0.08em] text-steel uppercase">Huddersfield</dt>
+                <dt className="text-xs tracking-[0.08em] text-steel uppercase">Head Office</dt>
                 <dd className="mt-1 text-base leading-relaxed text-charcoal">
                   {firm.address.line1}
                   <br />
@@ -64,8 +64,12 @@ export function ContactPage() {
                 </dd>
               </div>
               <div>
-                <dt className="text-xs tracking-[0.08em] text-steel uppercase">Manchester</dt>
-                <dd className="mt-1 text-base text-charcoal">By appointment. Street address not published.</dd>
+                <dt className="text-xs tracking-[0.08em] text-steel uppercase">Opening Hours</dt>
+                <dd className="mt-1 text-base leading-relaxed text-charcoal">
+                  Monday to Friday
+                  <br />
+                  09:00 to 18:00
+                </dd>
               </div>
             </dl>
             <ol className="mt-10 space-y-6">

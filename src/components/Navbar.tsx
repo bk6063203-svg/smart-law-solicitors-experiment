@@ -16,7 +16,6 @@ export function Navbar() {
     { label: "About", page: "about" as const, section: undefined, onClick: () => navigate("about") },
     { label: "Conveyancing", page: "services" as const, section: "conveyancing", onClick: () => navigate("services", "conveyancing") },
     { label: "Services", page: "services" as const, section: undefined, onClick: () => navigate("services") },
-    { label: "People", page: "people" as const, section: undefined, onClick: () => navigate("people") },
     { label: "Journal", page: "insights" as const, section: undefined, onClick: () => navigate("insights") },
   ];
 
@@ -127,7 +126,7 @@ export function Navbar() {
                   : "border-white/55 bg-transparent text-white hover:bg-white hover:text-navy",
               )}
             >
-              <span>Speak to an Expert</span>
+              <span>Speak to a Solicitor</span>
               <ArrowUpRight
                 className="h-3.5 w-3.5 transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
                 aria-hidden="true"

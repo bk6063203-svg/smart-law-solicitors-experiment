@@ -17,7 +17,7 @@ const stages: Stage[] = [
     index: "01",
     label: "Precedent",
     text: "Founded on precedent.",
-    note: "The law is a heritage profession. We honour its rigour — its libraries, its discipline, its duty of care — and then build the systems, speed and candour that a modern client deserves.",
+    note: "The law is a profession built on heritage, and we respect its rigour, its discipline and its duty of care. We combine these with the systems, efficiency and candour that clients rightly expect today.",
     image: "/images/library-heritage.jpg",
     imageAlt:
       "Interior of a grand British legal library with classical fluted columns, ornate ceiling mouldings and bookshelves.",
@@ -25,8 +25,8 @@ const stages: Stage[] = [
   {
     index: "02",
     label: "Discipline",
-    text: "Sharpened by discipline.",
-    note: "Documents are read for what they actually do. The precise scope of transaction support is agreed in writing before any work begins. Detail is never administrative noise — detail is the job.",
+    text: "Refined by discipline.",
+    note: "Documents are reviewed for their practical effect. The scope of our support in any transaction is agreed in writing before work begins. Attention to detail is not an administrative formality; it is the substance of our work.",
     image: photo(5511124, 1400),
     imageAlt:
       "A quiet executive boardroom with a long conference table and corporate glass architecture.",
@@ -35,7 +35,7 @@ const stages: Stage[] = [
     index: "03",
     label: "Momentum",
     text: "Driven by momentum.",
-    note: "The right answer delivered late is the wrong answer. Engineered workflows remove friction and delay, so senior legal judgement reaches you when the stakes are real.",
+    note: "Advice delivered late is of limited value. Efficient processes reduce delay, so that senior legal judgement reaches you when it is needed most.",
     image: photo(30797252, 1400),
     imageAlt: "Modern glass office building reflecting the city skyline.",
   },
@@ -43,7 +43,7 @@ const stages: Stage[] = [
     index: "04",
     label: "Your future",
     text: "Focused on your future.",
-    note: "Legacy is our foundation, not our ceiling. Legal clarity for the decisions that matter — from property transactions to business purchases and private client estates.",
+    note: "Our heritage is our foundation, not our limit. We provide clear legal advice on the decisions that matter, from property transactions and business acquisitions to private client and estate matters.",
     image: photo(30683445, 1400),
     imageAlt: "A row of classic British townhouses with ornate balconies and a tree-lined street.",
   },

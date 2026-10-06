@@ -23,8 +23,8 @@ export function Footer() {
             </button>
 
             <p className="mt-6 max-w-sm text-sm leading-[1.8] text-mist/80">
-              A modern solicitors&apos; practice. Senior judgement, engineered process and straight
-              answers — from Manchester and Huddersfield to wherever you are.
+              A modern solicitors&apos; practice offering senior legal judgement, efficient process and
+              clear advice from Huddersfield to clients across England and Wales.
             </p>
 
             <div className="mt-8 flex flex-col gap-1.5 text-xs text-cool">
@@ -32,14 +32,14 @@ export function Footer() {
               <address className="not-italic leading-relaxed text-mist/80">
                 {firm.address.line1}, {firm.address.city}, {firm.address.postcode}
               </address>
-              <span className="text-mist/60">Manchester Chambers by appointment.</span>
+              <span className="text-mist/60">Serving clients across England &amp; Wales</span>
             </div>
           </div>
 
           {/* Column 2: Practice Areas */}
           <div className="lg:col-span-3">
             <p className="text-[0.68rem] font-semibold tracking-[0.2em] text-white uppercase">
-              Practice
+              Practice Areas
             </p>
             <ul className="mt-5 space-y-2.5 text-xs text-mist/75">
               {services.map((service) => (
@@ -73,15 +73,6 @@ export function Footer() {
                   </button>
                 </li>
               ))}
-              <li>
-                <button
-                  type="button"
-                  onClick={() => navigate("about")}
-                  className="text-left transition-colors duration-200 hover:text-white"
-                >
-                  Legacy &amp; Future
-                </button>
-              </li>
             </ul>
           </div>
 
@@ -120,14 +111,14 @@ export function Footer() {
                 <p className="mt-1 text-xs text-mist/70">
                   Monday – Friday
                   <br />
-                  09:00 – 18:00 GMT
+                  09:00 – 18:00
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Regulatory, Complaints & Data Notices matching Screenshot 8 */}
+        {/* Regulatory, Complaints & Data Notices */}
         <div className="mt-16 border-t border-white/10 pt-10">
           <div className="grid gap-8 text-[0.72rem] leading-relaxed text-cool/90 sm:grid-cols-3">
             <div>
@@ -136,8 +127,8 @@ export function Footer() {
               </p>
               <p className="mt-2 text-mist/75">
                 Smart Law Solicitors is authorised and regulated by the Solicitors Regulation
-                Authority. England &amp; Wales. Legal services provided subject to SRA Standards &amp;
-                Regulations.
+                Authority (SRA number: [insert]). We provide legal services in England and Wales subject
+                to the SRA Standards and Regulations.
               </p>
             </div>
             <div>
@@ -145,17 +136,17 @@ export function Footer() {
                 Complaints
               </p>
               <p className="mt-2 text-mist/75">
-                Our complaints handling procedure is available on request. If we cannot resolve your
-                concern within eight weeks, you may refer it to the Legal Ombudsman.
+                Our complaints procedure is available on request. If we are unable to resolve your
+                complaint within eight weeks, you may refer it to the Legal Ombudsman.
               </p>
             </div>
             <div>
               <p className="font-semibold tracking-[0.16em] text-white uppercase">
-                Data &amp; Funds
+                Data &amp; Client Money
               </p>
               <p className="mt-2 text-mist/75">
-                Personal data is processed strictly under UK GDPR. Client money is held in designated
-                client bank accounts, and all matters are protected by professional indemnity cover.
+                Personal data is processed in accordance with the UK GDPR. Client money is held in
+                designated client accounts, and the firm maintains professional indemnity insurance.
               </p>
             </div>
           </div>
@@ -164,9 +155,6 @@ export function Footer() {
         {/* Copyright bar */}
         <div className="mt-10 flex flex-col justify-between gap-3 border-t border-white/5 pt-6 text-[0.68rem] text-cool/70 sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Smart Law Solicitors. All rights reserved.</p>
-          <p className="text-cool/60">
-            Frontend demonstration interface. No backend or server transmission.
-          </p>
         </div>
       </div>
     </footer>

@@ -31,10 +31,10 @@ export function photoCrop(id: number, width: number, height: number) {
 }
 
 export const adviceDisclaimer =
-  "General information only. This is not legal advice, and it is not a statement of how any individual matter will be handled.";
+  "The information on this page is general in nature. It does not constitute legal advice and does not describe how any individual matter will be handled.";
 
 export type NavItem = {
-  id: "home" | "about" | "services" | "people" | "insights" | "contact";
+  id: "home" | "about" | "services" | "insights" | "contact";
   label: string;
 };
 
@@ -42,7 +42,6 @@ export const navigation: NavItem[] = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
   { id: "services", label: "Services" },
-  { id: "people", label: "Our People" },
   { id: "insights", label: "Insights" },
   { id: "contact", label: "Contact" },
 ];
@@ -77,61 +76,60 @@ export const services: Service[] = [
     id: "pharmaceutical",
     number: "01",
     title: "Pharmaceutical Transactions",
-    summary:
-      "Commercial work where science, supply and contract have to sit in the same document.",
-    lede: "Pharmaceutical transactions ask for careful reading of commercial terms in a regulated setting. Smart Law has experience with pharmaceutical transactions exceeding £1 million. That is a statement of experience — not a ranking, and not a promise about any future instruction.",
+    summary: "Specialist commercial practice",
+    lede: "Pharmaceutical transactions require careful analysis of commercial terms within a regulated environment. Smart Law Solicitors has experience of pharmaceutical transactions with a value exceeding £1 million. This is a statement of experience only; it is not a ranking, and it does not constitute any assurance as to the outcome of a future instruction.",
     points: [
-      "Transactions discussed on their own papers, not from a template pitch",
-      "Commercial environments, contracts and the parties around them",
-      "Scope agreed with the client before work is treated as instructed",
+      "Each transaction is considered on its own documents and circumstances",
+      "We advise on the commercial context, the contractual terms and the parties involved",
+      "The scope of our work is agreed with the client before any instruction is accepted",
     ],
     image: "/images/services/pharmaceutical.jpg",
-    imageAlt: "Two scientists in clean white laboratory coats working with precision analytical instruments in a pharmaceutical facility.",
+    imageAlt: "Precision analytical instruments in a pharmaceutical facility.",
     secondaryImage: photo(9259964, 1200),
     secondaryAlt: "Glass laboratory vessels arranged on a bench.",
     tone: "lab",
-    fact: "Experience with pharmaceutical transactions exceeding £1 million.",
+    fact: "Experience of pharmaceutical transactions exceeding £1 million.",
   },
   {
     id: "wills",
     number: "02",
-    title: "Wills & Probate",
-    summary: "Three related pieces of work, kept distinct: wills, probate, and estate administration.",
-    lede: "Private client work should feel calm and precise. A will, a grant of probate, and the administration of an estate are not the same task. Smart Law discusses each on its own terms, without published fees, tax figures or fixed timetables.",
+    title: "Wills and Probate",
+    summary: "Wills · Probate · Estate Administration",
+    lede: "Private client work calls for calm and precise advice. The preparation of a will, an application for a grant of probate and the administration of an estate are distinct tasks, and we address each on its own terms. We do not publish fees, tax figures or fixed timetables.",
     points: ["Wills", "Probate", "Estate administration"],
     subs: [
       {
         title: "Wills",
-        text: "A will records what a person wants to happen, and who should carry that out. It is a private instruction. We do not publish fees or turnaround times for will drafting on this site.",
+        text: "A will records a person's wishes for their estate and appoints those who are to carry them out. It is a private instruction. Fees and timescales for the preparation of wills are not published on this website.",
       },
       {
         title: "Probate",
-        text: "After a death, probate may be required before an estate can be dealt with. Not every estate needs the same grant. That depends on the assets and the institutions holding them.",
+        text: "Following a death, a grant of probate may be required before the estate can be administered. The type of grant required, if any, depends on the assets held and the institutions that hold them.",
       },
       {
         title: "Estate administration",
-        text: "Administration is the work of identifying what there is, meeting liabilities that must be met, and distributing what remains. Scope is agreed with the people responsible. We do not set out a fixed timetable here.",
+        text: "Estate administration involves identifying the assets of the estate, discharging its liabilities and distributing the remainder to those entitled. The scope of our involvement is agreed with those responsible for the estate. We do not publish fixed timetables.",
       },
     ],
     image: "/images/services/wills-probate.jpg",
-    imageAlt: "A dignified private client desk with legal parchment documents, fountain pen, and classic law library books.",
+    imageAlt: "A private client desk with legal parchment documents, fountain pen, and classic law library books.",
     tone: "calm",
   },
   {
     id: "conveyancing",
     number: "03",
-    title: "Commercial & Residential Conveyancing",
-    summary: "Homes and commercial property, handled as separate instructions.",
-    lede: "Buying, selling or transferring property is a sequence of documents and decisions. Residential conveyancing and commercial conveyancing are different work. Smart Law keeps them separate, and does not treat a commercial building as a larger version of a house.",
+    title: "Commercial and Residential Conveyancing",
+    summary: "Property sales, purchases and finance",
+    lede: "Buying, selling or transferring property involves a sequence of documents and decisions. Residential and commercial conveyancing are distinct areas of work, and we keep them separate. A commercial building is not treated as a larger version of a house.",
     points: ["Residential conveyancing", "Commercial conveyancing"],
     subs: [
       {
         title: "Residential conveyancing",
-        text: "Purchases, sales and related paperwork for homes. A useful first conversation starts with who is buying, who is selling, and which papers already exist. We do not publish fees or completion timescales on this page.",
+        text: "Purchases, sales and associated documentation for residential property. An initial discussion will usually address who is buying, who is selling and which documents are already available. Fees and completion timescales are not published on this page.",
       },
       {
         title: "Commercial conveyancing",
-        text: "Transactions involving commercial property, including where occupation, use or an existing lease is part of the picture. The structure of the deal — property, company, or something else — should be clear before advice is treated as given.",
+        text: "Transactions involving commercial property, including those in which occupation, use or an existing lease forms part of the transaction. The structure of the transaction, whether a transfer of property, of a company or otherwise, should be established before advice is given.",
       },
     ],
     image: photo(30683445, 1600),
@@ -143,9 +141,9 @@ export const services: Service[] = [
   {
     id: "business",
     number: "04",
-    title: "Business Sale & Purchase",
-    summary: "The sale or purchase of a business, read from the deal in front of you.",
-    lede: "A business sale or purchase is a set of choices before it is a set of signatures. Who is selling, what is being sold, and which contracts have to move with the business are questions for the papers — not for a published list of transaction values. Smart Law does not publish deal values on this site.",
+    title: "Business Sale and Purchase",
+    summary: "Advice for owners buying or selling a business",
+    lede: "A business sale or purchase involves a series of decisions before any document is signed. Who is selling, what is being sold and which contracts must transfer with the business are matters determined from the documents. We do not publish transaction values on this website.",
     points: [
       "Share sales and asset sales are different instructions",
       "Heads of terms, even in draft, are more useful than a polished summary",
@@ -158,22 +156,22 @@ export const services: Service[] = [
   {
     id: "leases",
     number: "05",
-    title: "Commercial & Residential Leases",
-    summary: "A lease is a document with a life: term, money, repair, use, and an ending.",
-    lede: "Commercial leases and residential leases are different documents, often made with different bargaining power. Smart Law treats them as separate instructions. We do not publish a catalogue of landlord and tenant claims.",
-    points: ["Commercial leases", "Residential leases"],
+    title: "Commercial and Residential Leases",
+    summary: "Leasehold property, handled with precision",
+    lede: "Commercial and residential leases are distinct documents, frequently entered into with differing bargaining power, and we treat them as separate instructions. We do not publish a schedule of landlord and tenant claims.",
+    points: ["Reviewing a lease", "Commercial leases", "Residential leases"],
     subs: [
       {
-        title: "Reading a lease",
-        text: "Before signature, a person should be able to see how long the lease lasts, what must be paid beyond the headline rent, who repairs the structure, and what happens at the end. If those answers are buried, they should be brought to the surface.",
+        title: "Reviewing a lease",
+        text: "Before signing, you should be able to establish the length of the term, the sums payable in addition to the headline rent, responsibility for repair of the structure, and the position at the end of the term. Where this information is not readily apparent, we will identify it for you.",
       },
       {
         title: "Commercial leases",
-        text: "Commercial occupation is often the asset. Use, alienation, repair and the end of the term are read against the business that has to live with them. Scope is agreed from the draft in hand.",
+        text: "For many businesses, the premises are a core asset. Use, assignment and subletting, repair and the end of the term are considered in light of the business that must operate under them. Scope is agreed on the basis of the draft lease provided.",
       },
       {
         title: "Residential leases",
-        text: "A residential lease is a home as well as a contract. We discuss the document you have, or the draft you have been asked to sign. We do not invent a menu of tenant or landlord products on this page.",
+        text: "A residential lease governs a home as well as a legal relationship. We will advise on the document you hold or the draft you have been asked to sign. We do not offer a fixed range of landlord or tenant products.",
       },
     ],
     image: photo(11408618, 1800),
@@ -184,25 +182,25 @@ export const services: Service[] = [
     id: "immigration",
     number: "06",
     title: "Immigration",
-    summary: "Four routes, discussed carefully. No outcome is guaranteed.",
-    lede: "Smart Law discusses visit visas, student visas, leave to remain, and permanent residence. Rules change. An application is decided by the relevant authority, not by a solicitor’s confidence. The firm does not guarantee a visa, leave to remain, or permanent residence.",
-    points: ["Visit Visa", "Student Visa", "Leave to Remain", "Permanent Residence"],
+    summary: "Visit · Study · Remain · Settle",
+    lede: "We advise on visit visas, student visas, leave to remain and permanent residence. Immigration rules change, and each application is decided by the relevant authority, not by the solicitor. The firm cannot guarantee any visa, grant of leave to remain or settlement.",
+    points: ["Visit visa", "Student visa", "Leave to remain", "Permanent residence"],
     subs: [
       {
-        title: "Visit Visa",
-        text: "For people who wish to come to the United Kingdom for a temporary visit. A visit is not a route to settlement by another name. Approval is not guaranteed.",
+        title: "Visit visa",
+        text: "For those wishing to visit the United Kingdom temporarily. A visit visa is not a route to settlement. Approval cannot be guaranteed.",
       },
       {
-        title: "Student Visa",
-        text: "For those seeking to study in the UK. We can discuss the route, the documents, and the questions an application raises. We do not guarantee a student visa.",
+        title: "Student visa",
+        text: "For those seeking to study in the United Kingdom. We can advise on the appropriate route, the supporting documents and the issues an application may raise. We cannot guarantee that a student visa will be granted.",
       },
       {
-        title: "Leave to Remain",
-        text: "For people who wish to extend or vary their stay. Outcomes depend on the rules and the individual circumstances at the time. We do not guarantee leave to remain.",
+        title: "Leave to remain",
+        text: "For those wishing to extend or vary their stay in the United Kingdom. The outcome depends on the immigration rules and the applicant's circumstances at the time of application. Leave to remain cannot be guaranteed.",
       },
       {
-        title: "Permanent Residence",
-        text: "Settlement is a significant application, with its own evidence. We can discuss eligibility questions and the material required. We do not guarantee permanent residence.",
+        title: "Permanent residence",
+        text: "Settlement is a significant application requiring its own body of evidence. We can advise on eligibility and on the material required. Permanent residence cannot be guaranteed.",
       },
     ],
     image: photo(18729210, 1800),
@@ -211,17 +209,17 @@ export const services: Service[] = [
     secondaryAlt: "The iron and glass roof of a major London railway station.",
     tone: "city",
     disclaimer:
-      "No visa, grant of leave, or settlement application is guaranteed. Please do not send original identity documents through this website.",
+      "Important: No visa, grant of leave or settlement application can be guaranteed. Please do not send original identity documents through this website.",
   },
   {
     id: "solicitation",
     number: "07",
     title: "Solicitation",
-    summary: "A confirmed direction of the practice. Detailed scope has not yet been published.",
-    lede: "Solicitation is a confirmed service direction at Smart Law Solicitors. A detailed scope has not yet been supplied for publication, and this site does not invent one. If you need to know whether the firm can assist, contact the office. We will tell you plainly.",
+    summary: "Scope to be confirmed",
+    lede: "Solicitation is a service area of Smart Law Solicitors. If you would like to know whether the firm can assist with your particular requirements, please contact the office and we will advise you directly.",
     points: [],
     image: photo(3906592, 1600),
-    imageAlt: "An empty meeting room with a wooden table and dark chairs.",
+    imageAlt: "An executive meeting room with a wooden table and dark chairs.",
     tone: "board",
   },
 ];
@@ -297,19 +295,19 @@ export const founderStages: FounderStage[] = [
     id: "introduction",
     number: "01",
     title: "Introduction",
-    body: "Ather Ahmed is Managing Partner and Founder of Smart Law Solicitors. He leads a practice that works with individuals, families and businesses from Manchester and Huddersfield.",
+    body: "Ather Ahmed is Managing Partner and Founder of Smart Law Solicitors. He leads a practice that works with individuals, families and businesses from Huddersfield and across England and Wales.",
   },
   {
     id: "background",
     number: "02",
     title: "Professional background",
-    body: "This page does not set out a career history. Professional background is discussed directly with clients, rather than summarised from detail that has not been published.",
+    body: "This page does not set out a career history. Professional background is discussed directly with clients, rather than summarised on this website.",
   },
   {
     id: "qualifications",
     number: "03",
     title: "Qualifications",
-    body: "Formal qualifications and practising information are not listed here. They have not been supplied for publication. If a credential matters to your instruction, ask the office. It should come from the firm, not from an invented list.",
+    body: "Formal qualifications and practising information are not listed here. Information on qualifications and regulatory status is available from the office where it is relevant to an instruction.",
   },
   {
     id: "philosophy",
@@ -340,16 +338,16 @@ export type Insight = {
 export const insights: Insight[] = [
   {
     id: "residential-purchase",
-    title: "Before exchange: questions worth asking on a residential purchase",
+    title: "Before Exchange: Questions to Consider on a Residential Purchase",
     category: "Conveyancing",
     date: "12 March 2026",
     excerpt:
-      "A residential purchase is a sequence of documents and decisions. These are questions that often help a first conversation — not a timetable, and not a fee.",
+      "A residential purchase involves a sequence of documents and decisions. This article sets out questions that may usefully be raised at an initial consultation. It is not a timetable or a statement of fees.",
     reading: "3 min read",
     image: photo(18729449, 1600),
     imageAlt: "A quiet residential street of classic townhouses.",
     body: [
-      "A residential purchase is a sequence of documents, searches and decisions. This note does not set out fees, and it does not promise a timetable. It is a list of questions that often help a first conversation.",
+      "A residential purchase involves a sequence of documents, searches and decisions. This note does not set out fees, and it does not promise a timetable. It is a list of questions that often help a first conversation.",
       "Who is selling, and is anyone else named on the title? What is included in the price, and what is not? Are you buying with a mortgage, and has anyone explained which documents a lender will want to see? Have you read the fittings and contents form, or are you relying on what was said at a viewing?",
       "Exchange and completion are different moments. Until exchange, a purchase can still fall away. After exchange, the parties are usually bound to complete on the agreed date. The consequences of missing that date depend on the contract. They should be explained before you sign, not after.",
       "Bring what you already have: the agent’s particulars, any survey, and the names of the people who will be on the title. Smart Law can then say whether the firm can assist, and what a next conversation would cover. Nothing on this page is advice on your purchase.",
@@ -357,14 +355,14 @@ export const insights: Insight[] = [
   },
   {
     id: "commercial-property",
-    title: "Commercial property, in plain language",
+    title: "Commercial Property Explained",
     category: "Conveyancing",
     date: "4 March 2026",
     excerpt:
-      "Commercial conveyancing is not residential work with a larger building. The parties, the use and the documents are often different.",
+      "Commercial conveyancing is not residential work applied to a larger building. The parties, the use of the property and the documents involved often differ.",
     reading: "3 min read",
     image: photo(10964647, 1600),
-    imageAlt: "A modern high-rise facade photographed from street level.",
+    imageAlt: "A modern commercial building facade photographed from street level.",
     body: [
       "Commercial conveyancing is not residential conveyancing with a larger building. The parties, the use, and the documents are often different. A buyer may be a company. The property may be subject to leases. The value to the business may sit in the right to occupy, not only in the bricks.",
       "A useful first meeting starts with the structure. Are you buying a property, buying a company that owns a property, or taking a lease? Those are different instructions. This page does not rank them, and it does not suggest that one is safer.",
@@ -374,31 +372,31 @@ export const insights: Insight[] = [
   },
   {
     id: "pharmaceutical-note",
-    title: "Pharmaceutical transactions: preparation, not promises",
+    title: "Pharmaceutical Transactions: Preparation, Not Assurances",
     category: "Pharmaceutical Transactions",
     date: "18 February 2026",
     excerpt:
-      "Experience with transactions exceeding £1 million is not a ranking, and it is not a promise about the next instruction.",
+      "Experience of transactions exceeding £1 million is a statement of experience. It is not a ranking and gives no assurance as to the outcome of a future instruction.",
     reading: "3 min read",
     image: photo(5118462, 1600),
     imageAlt: "A controlled laboratory environment with a person in protective clothing.",
     body: [
       "Pharmaceutical transactions sit at a meeting point of commerce, science and regulation. The documents may concern supply, distribution, licensing, or the sale of a business connected to that work. They are rarely just a contract.",
-      "Smart Law has experience with pharmaceutical transactions exceeding £1 million. That is a statement of experience, not a ranking, and not a promise about the next instruction.",
+      "Smart Law has experience of pharmaceutical transactions exceeding £1 million. That is a statement of experience only, not a ranking, and not a promise about the next instruction.",
       "Before a meeting, it helps to know the parties, the countries involved, and whether a regulator’s consent is part of the picture. It helps to know what has already been drafted, and what is still a commercial understanding. Those facts change the shape of the work. They do not, by themselves, tell you what the documents should say.",
       "We do not publish a menu of pharmaceutical services beyond this direction, and we do not publish fees here. If you have a transaction of this kind, contact the office and describe it in ordinary language.",
     ],
   },
   {
     id: "wills-note",
-    title: "Wills, probate and estate administration are not the same task",
-    category: "Wills & Probate",
+    title: "Wills, Probate and Estate Administration Are Distinct",
+    category: "Wills and Probate",
     date: "2 February 2026",
     excerpt:
-      "People often use these words as if they were one service. They are related, and they are distinct.",
+      "These terms are often used interchangeably. They are related, but each describes a different task.",
     reading: "3 min read",
     image: photo(28463480, 1600),
-    imageAlt: "A multi-level library interior with warm light on the shelves.",
+    imageAlt: "A classic library interior with warm light on the shelves.",
     body: [
       "People often use these words as if they were one service. They are related, and they are distinct.",
       "A will is a document made in life. It records what a person wants to happen to their estate, and who should carry that out. Making or updating a will is a private instruction. It deserves time, and it deserves language the person actually understands.",
@@ -409,11 +407,11 @@ export const insights: Insight[] = [
   },
   {
     id: "reading-a-lease",
-    title: "A lease is a document with a life",
+    title: "A Lease: A Document with Continuing Consequences",
     category: "Leases",
     date: "21 January 2026",
     excerpt:
-      "Commercial and residential leases are different documents. Both should be readable before they are signed.",
+      "Commercial and residential leases are different documents. Each should be fully understood before it is signed.",
     reading: "2 min read",
     image: photo(38304588, 1600),
     imageAlt: "A classical stone building facade with a symmetrical arrangement of windows.",
@@ -426,11 +424,11 @@ export const insights: Insight[] = [
   },
   {
     id: "immigration-routes",
-    title: "Four immigration conversations — and no guarantees",
+    title: "Four Immigration Applications, and No Guarantees",
     category: "Immigration",
     date: "9 January 2026",
     excerpt:
-      "Visit, study, leave to remain, and permanent residence. The names are familiar. The result is never ours to promise.",
+      "Visit, study, leave to remain and permanent residence are familiar terms. The outcome of any application is never ours to guarantee.",
     reading: "3 min read",
     image: photo(17549000, 1600),
     imageAlt: "St Pancras station seen from the street, with traffic and stone architecture.",
@@ -444,11 +442,11 @@ export const insights: Insight[] = [
   },
   {
     id: "business-meeting",
-    title: "Buying or selling a business: what to bring to a first meeting",
-    category: "Business Sale & Purchase",
+    title: "Buying or Selling a Business: Preparing for an Initial Meeting",
+    category: "Business Sale and Purchase",
     date: "11 December 2025",
     excerpt:
-      "There is no useful typical deal, and this note does not publish transaction values. There is the deal in front of you.",
+      "There is no typical transaction, and no transaction values are published here. Advice depends on the particular transaction in question.",
     reading: "2 min read",
     image: photo(6814530, 1600),
     imageAlt: "A person reviewing contract papers at a conference table.",
@@ -473,21 +471,21 @@ export const principles = [
   {
     number: "01",
     title: "Clarity",
-    text: "The decision in front of you should be visible. Advice that obscures it is not finished.",
+    text: "The decision before you should be clear. Advice that obscures it is incomplete.",
   },
   {
     number: "02",
-    title: "Personal instructions",
-    text: "Matters are taken up with the people involved. This is not a call-centre practice.",
+    title: "Personal instruction",
+    text: "Matters are handled directly with the people involved, and not through a call centre.",
   },
   {
     number: "03",
     title: "Careful documents",
-    text: "Contracts, wills, leases and applications are read for what they actually do.",
+    text: "Contracts, wills, leases and applications are reviewed for their practical effect.",
   },
   {
     number: "04",
-    title: "Northern offices",
-    text: "The firm is in Manchester and Huddersfield. London is a visual setting, not an address.",
+    title: "Huddersfield practice",
+    text: "The firm is based in Huddersfield, advising clients across England and Wales.",
   },
 ];

@@ -3,23 +3,23 @@ import { FileCheck, Landmark, ShieldCheck, Users } from "lucide-react";
 const items = [
   {
     icon: Landmark,
-    title: "UK practice",
-    text: "Smart Law Solicitors practises from Manchester and Huddersfield. London is a visual setting, not a third office.",
+    title: "Practising in the United Kingdom",
+    text: "Smart Law Solicitors practises from our office in Huddersfield, and provides legal services across England and Wales.",
   },
   {
     icon: Users,
-    title: "Client focus",
-    text: "Matters stay close to the people involved. A first conversation does not create a client relationship.",
+    title: "Client-focused service",
+    text: "Our matters are handled by a small team in close contact with the client. An initial conversation does not create a solicitor-client relationship.",
   },
   {
     icon: FileCheck,
     title: "Clear process",
-    text: "Documents are read carefully, scope is confirmed in writing, and the next step is made visible.",
+    text: "Documents are reviewed with care, the scope of work is confirmed in writing, and the next step in every matter is made clear.",
   },
   {
     icon: ShieldCheck,
-    title: "No invented claims",
-    text: "Unconfirmed awards, rankings, qualifications and regulatory numbers are not added to this website.",
+    title: "Accurate information",
+    text: "We publish only information that can be verified. Details of our regulatory status and qualifications are available on request.",
   },
 ];
 
@@ -29,11 +29,11 @@ export function CredentialBlock() {
       <div className="mx-auto max-w-[1240px] px-5 py-16 sm:px-8 lg:px-10 lg:py-20">
         <div className="mb-10 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
           <div className="max-w-xl">
-            <p className="text-xs font-medium tracking-[0.16em] text-cool uppercase">Regulatory</p>
-            <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">A considered practice, stated plainly.</h2>
+            <p className="text-xs font-medium tracking-[0.16em] text-cool uppercase">About Our Practice</p>
+            <h2 className="mt-3 font-display text-4xl leading-tight sm:text-5xl">A professional practice, transparently stated.</h2>
           </div>
           <p className="max-w-xs text-xs leading-relaxed text-mist/80 sm:text-right">
-            Nothing here is invented. If a credential matters to your instruction, ask the office.
+            Smart Law Solicitors practises from our office in Huddersfield, and provides legal services across England and Wales.
           </p>
         </div>
 

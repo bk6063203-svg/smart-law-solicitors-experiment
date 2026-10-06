@@ -17,27 +17,24 @@ export function AboutPage() {
     <>
       <PageHero
         eyebrow="About"
-        title="A northern practice, with a modern standard of clarity."
-        text="Smart Law Solicitors advises individuals, families and businesses from Manchester and Huddersfield. The work is personal. The language is plain. London is the film, not the address."
+        title="A northern practice with a modern standard of clarity."
+        text="Smart Law Solicitors advises individuals, families and businesses from Huddersfield, serving clients across England and Wales. Our service is personal, and our advice is given in plain language."
         image={photo(34760017, 1800)}
-        imageAlt="Manchester skyline with red-brick buildings."
+        imageAlt="Architectural cityscape under an open sky."
       />
       <section className="bg-white">
         <div className="mx-auto grid max-w-[1240px] gap-12 px-5 py-20 sm:px-8 lg:grid-cols-12 lg:px-10 lg:py-28">
           <div className="lg:col-span-7">
             <p className="text-xs font-medium tracking-[0.08em] text-steel uppercase">The firm</p>
             <h2 className="mt-4 font-display text-4xl leading-tight text-navy sm:text-5xl">
-              Strategic counsel, kept close to the person who has to decide.
+              Strategic counsel, kept close to the person who must decide.
             </h2>
             <div className="mt-6 space-y-5 text-base leading-relaxed text-charcoal">
               <p>
-                Smart Law was founded to offer legal advice that a client can use. The published practice covers pharmaceutical transactions, wills and probate, commercial and residential conveyancing, business sale and purchase, commercial and residential leases, immigration, and solicitation.
+                Smart Law was founded to provide legal advice that clients can put to practical use. Our areas of practice are pharmaceutical transactions, wills and probate, commercial and residential conveyancing, business sale and purchase, commercial and residential leases, immigration and solicitation.
               </p>
               <p>
-                We do not dress unpublished history as fact. Qualifications, awards and regulatory numbers are available from the office when they are relevant to an instruction. They are not invented for a website.
-              </p>
-              <p>
-                The visual language of the site looks toward London at night because that city holds so many of the decisions the law is asked to hold. The offices remain in Manchester and Huddersfield.
+                Information on qualifications, awards and regulatory status is available from the office where it is relevant to an instruction.
               </p>
             </div>
           </div>

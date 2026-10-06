@@ -11,7 +11,6 @@ import { PageTransition } from "@/components/PageTransition";
 import { HomePage } from "@/pages/HomePage";
 import { AboutPage } from "@/pages/AboutPage";
 import { ServicesPage } from "@/pages/ServicesPage";
-import { PeoplePage } from "@/pages/PeoplePage";
 import { InsightsPage } from "@/pages/InsightsPage";
 import { ContactPage } from "@/pages/ContactPage";
 
@@ -25,10 +24,9 @@ function parseHash(): Route {
 
 function titleFor(route: Route) {
   const names: Record<PageId, string> = {
-    home: "Smart Law Solicitors | Manchester & Huddersfield",
+    home: "Smart Law Solicitors | Solicitors in Huddersfield",
     about: "About | Smart Law Solicitors",
     services: "Services | Smart Law Solicitors",
-    people: "Our People | Smart Law Solicitors",
     insights: "Insights | Smart Law Solicitors",
     contact: "Contact | Smart Law Solicitors",
   };
@@ -119,7 +117,6 @@ export default function App() {
     home: <HomePage />,
     about: <AboutPage />,
     services: <ServicesPage />,
-    people: <PeoplePage />,
     insights: <InsightsPage />,
     contact: <ContactPage />,
   }[route.page];

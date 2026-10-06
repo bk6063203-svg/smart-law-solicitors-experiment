@@ -16,12 +16,11 @@ export function CTASection() {
 
           <h2 className="mt-5 font-display text-[2.75rem] leading-[0.98] font-medium tracking-[-0.025em] sm:text-6xl lg:text-[4rem]">
             Speak to
-            <span className="block font-display italic text-mist">an Expert.</span>
+            <span className="block font-display italic text-mist">a Solicitor.</span>
           </h2>
 
           <p className="mt-6 text-sm leading-[1.8] text-mist/90 sm:text-[0.96rem]">
-            Tell us where things stand. A senior member of the team — never a call centre — will
-            come back with a clear view of your options and, if you want one, an agreed scope.
+            Please tell us where your matter currently stands. A senior member of the team will respond personally with a clear view of your options and, if you wish, a proposed scope of work.
           </p>
 
           <div className="mt-10 space-y-5 border-t border-white/15 pt-8 text-sm">
@@ -51,7 +50,7 @@ export function CTASection() {
 
             <div className="pt-2">
               <p className="text-[0.66rem] font-medium tracking-[0.18em] text-cool uppercase">
-                Monday – Friday · 09:00 – 18:00 · Manchester &amp; Huddersfield
+                Monday to Friday, 09:00 to 18:00 · Huddersfield Office
               </p>
             </div>
           </div>

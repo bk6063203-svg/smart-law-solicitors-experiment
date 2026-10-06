@@ -63,8 +63,8 @@ export function InsightsPage() {
     <>
       <PageHero
         eyebrow="Insights"
-        title="Notes, not news of your matter."
-        text="Short pieces of general information across the firm’s published practice. They are not advice, and they do not describe how an individual instruction will be handled."
+        title="Insights: general information, not advice on your matter."
+        text="These short articles provide general information on the firm's areas of practice. They do not constitute legal advice and do not describe how any individual instruction will be handled."
         image={photo(28463480, 1800)}
         imageAlt="A library interior with shelves of books."
       />

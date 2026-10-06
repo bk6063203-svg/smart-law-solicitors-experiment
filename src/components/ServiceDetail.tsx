@@ -24,7 +24,7 @@ function StandardDetail({ service }: { service: Service }) {
           ) : null}
           {service.disclaimer ? <p className="mt-4 text-sm leading-relaxed text-steel">{service.disclaimer}</p> : null}
           <button type="button" onClick={() => navigate("contact")} className="mt-7 bg-navy px-5 py-3 text-sm text-white">
-            Speak to an Expert
+            Speak to a Solicitor
           </button>
         </div>
         <div className="lg:col-span-7">
@@ -84,7 +84,6 @@ function LeaseDetail({ service }: { service: Service }) {
                   </li>
                 ))}
               </ul>
-              <p className="mt-6 text-xs leading-relaxed text-steel">Decorative lines only. No invented clauses.</p>
             </div>
           </div>
         </div>
@@ -101,7 +100,7 @@ function LeaseDetail({ service }: { service: Service }) {
             ))}
           </div>
           <button type="button" onClick={() => navigate("contact")} className="mt-12 bg-navy px-5 py-3 text-sm text-white">
-            Speak to an Expert
+            Speak to a Solicitor
           </button>
           <p className="mt-6 text-xs leading-relaxed text-steel">{adviceDisclaimer}</p>
         </div>

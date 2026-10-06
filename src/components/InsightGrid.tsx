@@ -20,12 +20,12 @@ export function InsightGrid({
         <div className="mb-10 flex flex-wrap items-end justify-between gap-6">
           <SectionHeader
             eyebrow="Insights"
-            title="Notes from the practice."
-            text="General information only — not legal advice, and not a description of how a particular matter will be handled."
+            title="Insights: general information, not advice on your matter."
+            text="These short articles provide general information on the firm's areas of practice. They do not constitute legal advice and do not describe how any individual instruction will be handled."
           />
           {limit ? (
             <button type="button" onClick={() => navigate("insights")} className="text-sm text-navy link-draw">
-              All notes
+              View all articles
             </button>
           ) : null}
         </div>

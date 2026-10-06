@@ -37,9 +37,9 @@ export function TeamGrid({ layout = "grid" }: { layout?: "grid" | "rail" }) {
       <div ref={wrap} className="relative h-svh overflow-hidden bg-mist">
         <div className="flex h-full flex-col pt-24">
           <div className="px-8 pb-6 lg:px-12">
-            <p className="text-xs font-medium tracking-[0.08em] text-steel uppercase">Our people</p>
+            <p className="text-xs font-medium tracking-[0.08em] text-steel uppercase">Our People</p>
             <h2 className="mt-3 max-w-xl font-display text-4xl text-navy sm:text-5xl">
-              The confirmed team. No invented biographies.
+              Our Team
             </h2>
           </div>
           <div ref={track} className="flex h-full min-h-0 gap-5 px-8 pb-10 lg:px-12">
@@ -50,7 +50,7 @@ export function TeamGrid({ layout = "grid" }: { layout?: "grid" | "rail" }) {
             ))}
             <div className="flex w-[28vw] min-w-[280px] shrink-0 items-end pb-4">
               <p className="max-w-xs text-sm leading-relaxed text-charcoal">
-                Senior access is the default. Every instruction is led by an experienced practitioner.
+                Senior access is the norm rather than the exception. Every client matter has a named responsible solicitor.
               </p>
             </div>
           </div>

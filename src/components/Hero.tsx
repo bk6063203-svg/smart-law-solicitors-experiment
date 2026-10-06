@@ -28,31 +28,29 @@ export function Hero() {
   return (
     <section ref={root} className="dark-surface relative min-h-svh overflow-hidden text-white">
       <HeroVideo />
-      <p className="sr-only">
-        Background film of London at night. Smart Law Solicitors does not have a London office. The firm is in Manchester and Huddersfield.
-      </p>
+      <p className="sr-only">Background visual film.</p>
       <div className="relative z-10 mx-auto flex min-h-svh max-w-[1240px] flex-col justify-end px-5 pt-32 pb-16 sm:px-8 lg:justify-center lg:px-10 lg:pt-28 lg:pb-20">
         <div className="max-w-3xl">
           <p data-hero-item className="text-xs font-medium tracking-[0.08em] text-mist uppercase">
-            Solicitors · England &amp; Wales
+            Solicitors · England and Wales
           </p>
           <h1
             data-hero-item
             className="mt-5 max-w-4xl font-display text-[3.1rem] leading-[0.94] font-medium tracking-[-0.03em] text-balance sm:text-7xl lg:text-[5.7rem]"
           >
-            <span className="block">Smart counsel</span>
-            <span className="block font-display italic">for the decisions</span>
+            <span className="block">Considered legal counsel</span>
+            <span className="block font-display">for the decisions</span>
             <span className="block">that matter.</span>
           </h1>
           <p data-hero-item className="mt-6 max-w-xl text-base leading-relaxed text-mist sm:text-lg">
-            Smart Law Solicitors advises individuals, families and businesses from Manchester and Huddersfield — with personal attention, and documents read carefully.
+            Smart Law Solicitors advises individuals, families and businesses from our office in Huddersfield, providing personal attention and meticulous review of every document.
           </p>
           <div data-hero-item className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Button variant="light" onClick={() => navigate("contact")}>
-              Speak to an Expert
+              Speak to a Solicitor
             </Button>
             <Button variant="ghost-light" onClick={() => navigate("services")}>
-              Explore Our Services
+              Our Services
             </Button>
           </div>
           <div data-hero-item className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-mist">
@@ -61,10 +59,14 @@ export function Hero() {
               {firm.phoneDisplay}
             </a>
             <span className="hidden h-4 w-px bg-white/30 sm:block" aria-hidden="true" />
-            <span>Offices in Manchester &amp; Huddersfield</span>
+            <span>Office in Huddersfield · England and Wales</span>
           </div>
         </div>
         <div className="mt-12 flex items-end justify-between gap-6 lg:absolute lg:right-10 lg:bottom-10 lg:mt-0">
+          <div data-hero-item className="hidden flex-col items-end text-right text-xs text-mist/75 sm:flex">
+            <span className="font-display text-xs tracking-wider text-white uppercase">Head Office</span>
+            <span className="mt-0.5 text-[0.72rem] text-mist/80">142 Trinity Street · Huddersfield HD1 4DT</span>
+          </div>
           <a
             href="#intro"
             data-hero-item
@@ -79,10 +81,6 @@ export function Hero() {
             </span>
             Scroll
           </a>
-          <p data-hero-item className="max-w-[14rem] text-right text-xs leading-relaxed text-white/70">
-            London, at night
-            <span className="mt-1 block text-white/55">A visual setting. Not an office.</span>
-          </p>
         </div>
       </div>
     </section>

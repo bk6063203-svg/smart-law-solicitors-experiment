@@ -7,7 +7,7 @@ import { Scene3D } from "@/components/Scene3D";
 
 const lines = [
   { text: "The traditional firm was built around the lawyer.", muted: false },
-  { text: "Smart Law is built around you.", muted: true },
+  { text: "Smart Law is built around the client.", muted: true },
 ];
 
 export function Introduction() {
@@ -74,17 +74,17 @@ export function Introduction() {
           </h2>
           <div className="mt-8 max-w-2xl space-y-5 text-base leading-relaxed sm:text-[1.05rem]">
             <p data-intro-copy>
-              Smart Law Solicitors is a Manchester and Huddersfield practice for people who want the matter explained, not performed. Every matter starts with a simple contract — clarity before complexity, candour before caution.
+              Smart Law Solicitors is a Huddersfield practice for clients who value advice that is clearly explained. Every matter begins with a straightforward agreement on scope: clarity before complexity, and candour before caution.
             </p>
             <p data-intro-copy>
-              The work is personal. The language is plain. The next step should be visible before you take it.
+              Our service is personal, our language is plain, and the next step in your matter is always made clear before it is taken.
             </p>
           </div>
           <dl className="mt-12 grid border border-mist bg-white sm:grid-cols-3">
             {[
-              ["Senior eyes on the detail", "Every matter is led by experienced counsel — never lost in a processing queue."],
-              ["Systems on the process", "Engineered workflows remove friction and delay, so momentum is the default."],
-              ["Plain English on the page", "Advice you can act on, delivered in language you don't need a law degree to read."],
+              ["Senior oversight of every detail", "Every matter is led by an experienced solicitor and receives senior attention throughout."],
+              ["Efficient, well-structured processes", "Well-designed workflows reduce delay and keep each matter progressing."],
+              ["Clear, practical advice", "Advice is given in plain English, so that you can act on it with confidence."],
             ].map(([title, text]) => (
               <div
                 key={title}
@@ -109,12 +109,9 @@ export function Introduction() {
           <div data-intro-frame className="relative min-h-[420px] overflow-hidden bg-steel sm:min-h-[520px]">
             <img
               src={photo(34760017, 1600)}
-              alt="Red-brick Manchester skyline under a clear sky."
+              alt="Architectural city buildings under a clear sky."
               className="h-full min-h-[420px] w-full object-cover sm:min-h-[520px]"
             />
-            <p className="absolute bottom-0 left-0 max-w-xs bg-navy/80 px-4 py-3 text-xs leading-relaxed text-mist">
-              Manchester. One of two offices. London imagery elsewhere on this site is not a third address.
-            </p>
           </div>
           {showScene ? (
             <div className="pointer-events-none absolute -top-8 -left-10 hidden h-[78%] w-[62%] lg:block">
