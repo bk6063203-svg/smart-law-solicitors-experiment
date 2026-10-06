@@ -62,11 +62,7 @@ export function Hero() {
             <span>Office in Huddersfield · England and Wales</span>
           </div>
         </div>
-        <div className="mt-12 flex items-end justify-between gap-6 lg:absolute lg:right-10 lg:bottom-10 lg:mt-0">
-          <div data-hero-item className="hidden flex-col items-end text-right text-xs text-mist/75 sm:flex">
-            <span className="font-display text-xs tracking-wider text-white uppercase">Head Office</span>
-            <span className="mt-0.5 text-[0.72rem] text-mist/80">142 Trinity Street · Huddersfield HD1 4DT</span>
-          </div>
+        <div className="mt-12 flex flex-wrap items-end justify-between gap-6 lg:absolute lg:right-10 lg:bottom-10 lg:mt-0">
           <a
             href="#intro"
             data-hero-item
@@ -79,8 +75,12 @@ export function Hero() {
             <span className="scroll-nudge inline-flex h-10 w-10 items-center justify-center rounded-full border border-white/30">
               <ArrowDown className="h-4 w-4" aria-hidden="true" />
             </span>
-            Scroll
+            <span>Scroll</span>
           </a>
+          <div data-hero-item className="hidden flex-col items-end text-right text-xs text-mist/75 sm:flex">
+            <span className="font-medium text-white/90">London, at night</span>
+            <span className="mt-0.5 text-[0.72rem] text-mist/60">A visual setting. Not an office</span>
+          </div>
         </div>
       </div>
     </section>

@@ -2,7 +2,6 @@ import { photo, principles } from "@/data/site";
 import { useMediaQuery } from "@/hooks/useMediaQuery";
 import { useSite } from "@/context/SiteContext";
 import { PageHero } from "@/components/PageHero";
-import { FounderStory } from "@/components/FounderStory";
 import { LocationSection } from "@/components/LocationSection";
 import { CredentialBlock } from "@/components/CredentialBlock";
 import { Scene3D } from "@/components/Scene3D";
@@ -60,7 +59,6 @@ export function AboutPage() {
           ))}
         </div>
       </section>
-      <FounderStory />
       <LocationSection />
       <CredentialBlock />
       <CTASection />

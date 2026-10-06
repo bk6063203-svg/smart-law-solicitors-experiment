@@ -4,7 +4,6 @@ import { Hero } from "@/components/Hero";
 import { Introduction } from "@/components/Introduction";
 import { ScrollStory } from "@/components/ScrollStory";
 import { PracticeAccordion } from "@/components/PracticeAccordion";
-import { FounderStory } from "@/components/FounderStory";
 import { LocationSection } from "@/components/LocationSection";
 import { CredentialBlock } from "@/components/CredentialBlock";
 import { JournalFeature } from "@/components/JournalFeature";
@@ -78,7 +77,6 @@ export function HomePage() {
           </div>
         </section>
       ) : null}
-      <FounderStory />
       <section id="about" className="bg-white">
         <div>
           <div className="mx-auto max-w-[1240px] px-5 py-20 sm:px-8 lg:px-10 lg:py-28">
